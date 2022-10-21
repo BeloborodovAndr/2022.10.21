@@ -1,0 +1,390 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus, :active {outline: none;}
+a:focus, a:active {outline: none;}
+nav, footer, header, aside {display: block;}
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input, button, textarea {font-family: inherit;}
+input::-ms-clear{display: none;}
+button {cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a, a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top;}
+h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
+/*========================================================*/
+
+@font-face {
+    font-family: 'Circe Regular';
+    src: url('../fonts/Circe-Regular.eot');
+    src: url('../fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Circe-Regular.woff') format('woff'),
+    url('../fonts/Circe-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Circe Bold';
+    src: url('../fonts/Circe-Bold.eot');
+    src: url('../fonts/Circe-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Circe-Bold.woff') format('woff'),
+    url('../fonts/Circe-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.general {
+    width: calc(100vw - 20px);
+}
+
+.menu {
+    float: left;
+    width: 332px;
+    height: calc(100vh - 20px); /* По верстке 993px */
+    background-color: #3A4652;
+    font-family: 'Circe Bold';
+    font-size: 26px;
+    line-height: 38px;
+}
+
+.main {
+    float: left;
+    width: calc(100vw - 352px);
+    height: calc(100vh - 20px); /* По верстке 993px */
+    overflow: auto;
+}
+
+.menu_adm {
+    padding: 30px 0 0 40px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.menu_list a {
+    display: block;
+    padding: 12px 0;
+    padding: 12px 0 12px 40px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.menu_list a:first-child {
+    background-color: #85CE36;
+}
+
+.menu_list a:hover {
+    background-color: rgba(133, 206, 54, 0.2);
+}
+
+.main>div {
+    width: 1596px;
+}
+
+.main_header {
+    width: 100%;
+    height: 80px;
+}
+
+.main_header_image {
+    float: left;
+    width: 56%; /* 896px (56%) */
+    padding: 25px 0 0 28px;
+}
+
+.main_header_image img {
+    height: 35px;
+}
+
+.main_header_search {
+    float: left;
+    padding-top: 12px;
+    font-family: 'Circe Bold';
+    width: 29%; /* 460px (29%) */
+}
+
+.main_header_search input {
+    float: left;
+    font-size: 24px;
+    border: 1px solid #3A4652;
+    border-radius: 2px;
+    height: 55px;
+    padding: 0 15% 0 6%; /* 0 60px 0 30px; (0 13% 0 6%)*/
+    width: 100%; /* 460px (29%) */
+    background: url("../img/icons/glass.png") 95% 50% no-repeat; /* 415px (90% от 460px)*/
+}
+
+.main_header_search input:focus {
+    box-shadow: 0 0 5px rgba(58, 70, 82, 0.5);
+}
+
+.main_header_line {
+    float: left;
+    padding: 12px 20px 0 38px;
+}
+
+.main_header_line div {
+    height: 55px;
+    width: 2px;
+    background-color: #3A4652;
+}
+
+.main_header_select {
+    float: left;
+    font-family: 'Circe Regular';
+    padding-top: 11px;
+    width: 160px; /**/
+}
+
+
+.main_header_select select:hover {
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgba(58, 70, 82, 0.5);
+}
+
+/*Убрали стрелку у всех select:*/
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.main_header_select select {
+    color: #3A4652;
+    font-size: 24px;
+    line-height: 35px;
+    background: url("../img/icons/down.png") 92px 50% no-repeat;
+    width: 135px;
+    padding: 10px 0 10px 10px;
+    outline-color: #85CE36;
+}
+
+.main_color {
+    height: 28px;
+    background-color: #F6F6F6;
+}
+
+.main_filter {
+    height: 109px;
+    padding: 25px 0 0 90px;
+}
+
+.main_filter li {
+    float: left;
+}
+
+.main_filter select {
+    color: #3A4652;
+    font-family: 'Circe Bold';
+    font-size: 22px;
+    line-height: 32px;
+    border: 1px solid #3A4652;
+    border-radius: 2px;
+    height: 54px;
+    padding-left: 20px;
+    margin-right: 36px;
+}
+
+.main_filter form {
+    font-family: 'Circe Bold';
+    height: 54px; /*Задаем высоту form и соответственно input-ам*/
+    border: 1px solid #3A4652;
+    border-radius: 2px;
+    margin-right: 36px;
+}
+
+.main_filter form>div {
+    display: inline-block;
+    color: #3A4652;
+    width: 10px;
+    height: 2px;
+    background-color: #3A4652;
+}
+
+.main_filter input {
+    position: relative;
+    height: 100%; /*Задаем высоту плавающим input-ам*/
+    border-radius: 2px;
+    color: #3A4652;
+    font-size: 22px;
+}
+.main_filter input::-webkit-calendar-picker-indicator {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+.main_filter input::-webkit-datetime-edit-fields-wrapper {
+    position: absolute;
+    bottom: 9px;
+    left: 17px;
+}
+.main_filter input:hover::-webkit-datetime-edit-fields-wrapper {
+    text-shadow: 0 0 5px rgba(58, 70, 82, 0.5);
+}
+.main_filter select:hover {
+    box-shadow: 0 0 5px rgba(58, 70, 82, 0.5);
+}
+
+.main_filter_cities {
+    width: 210px;
+    background: url("../img/icons/down.png") 162px 50% no-repeat;
+}
+.main_filter_points {
+    width: 195px;
+    background: url("../img/icons/down.png") 151px 50% no-repeat;
+}
+.main_filter_category {
+    width: 200px;
+    background: url("../img/icons/down.png") 153px 50% no-repeat;
+}
+.main_filter_payment {
+    width: 170px;
+    background: url("../img/icons/down.png") 123px 50% no-repeat;
+}
+.main_filter_status {
+    width: 165px;
+    background: url("../img/icons/down.png") 117px 50% no-repeat;
+}
+
+.main_table {
+    border: 1px solid #3A4652;
+    border-radius: 2px;
+    margin: 0 12px 32px 12px;
+    padding-left: 16px;
+    height: 687px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #3A4652;
+    font-family: 'Circe Regular';
+}
+
+/*==========Главная срока=============*/
+.main_table table {
+    border-collapse: collapse;
+}
+
+.main_table_mainstring {
+    font-family: 'Circe Bold';
+    text-align: left;
+    vertical-align: middle;
+    height: 63px;
+    border-bottom: 1px solid #3A4652;
+}
+
+td {
+    /*border: 1px solid #000;*/
+}
+
+
+.main_table_mainstring_photo {
+    width: 103px;
+}
+.main_table_mainstring_photo div {
+    text-align: center;
+    width: 85px;
+}
+.main_table_mainstring_category {
+    width: 111px;
+}
+.main_table_mainstring_product {
+    width: 220px;
+}
+.main_table_mainstring_city {
+    width: 98px;
+}
+.main_table_mainstring_point {
+    width: 132px;
+}
+.main_table_mainstring_issue {
+    width: 135px;
+}
+.main_table_mainstring_deadline {
+    width: 164px;
+}
+.main_table_mainstring_days {
+    width: 81px;
+}
+.main_table_mainstring_payment {
+    width: 121px;
+}
+.main_table_mainstring_status {
+    width: 109px;
+}
+.main_table_mainstring_client {
+    width: 156px;
+}
+td.main_table_mainstring_button {
+    border-style: hidden;
+}
+/*==========Пустая строка=============*/
+.main_table_space {
+    height: 20px;
+}
+
+/*==========Cтроки=============*/
+.main_table_string {
+    height: 54px;
+}
+.main_table_string_photo {
+    text-align: center;
+    width: 85px;
+    background-color: #eeeeee;
+    padding: 5px 0;
+}
+.main_table_string_photo img {
+    width: 44px;
+    opacity: 20%;
+}
+.main_table_string_product a {
+    color: #85CE36;
+}
+.main_table_string_product a:hover {
+    text-shadow: 0 0 5px rgba(133, 206, 54, 0.5);
+}
+.main_table_string_client a {
+    color: #85CE36;
+}
+.main_table_string_client a:hover {
+    text-shadow: 0 0 5px rgba(133, 206, 54, 0.5);
+}
+.main_table_string_button a {
+    display: inline-block;
+    line-height: 30px;
+    border: 1px solid #85CE36;
+    border-radius: 2px;
+    text-align: center;
+    color: #85CE36;
+    width: 104px;
+}
+.main_table_string_button a:hover {
+    box-shadow: 0 0 5px rgba(133, 206, 54, 0.5);
+}
+
+.main_nav {
+    text-align: center;
+    font-family: 'Circe Bold';
+    font-size: 22px;
+    line-height: 22px;
+}
+
+.main_nav a, .main_nav span {
+    padding: 0 14px;
+    color: #3A4652;
+}

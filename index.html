@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Список заказов</title>
+		<meta http-equiv="Content-type" content="text/html"; charset="UTF-8"/>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	
+	<body>
+		<div class="general">
+			<div class="menu">
+				<div class="menu_adm">
+					Админка
+				</div>
+				<div class="menu_list">
+					<a href="#">Список заказов</a>
+					<a href="#">Товары</a>
+					<a href="#">Клиенты</a>
+					<a href="#">Категории</a>
+					<a href="#">Пункты выдачи</a>
+					<a href="#">Новости</a>
+					<a href="#">Оферта</a>
+				</div>
+
+			</div>
+			<div class="main">
+				<div>
+					<div class="main_header">
+						<div class="main_header_image">
+							<img src="img/logo.png" alt="">
+						</div>
+						<form class="main_header_search" action="#" method="post" enctype="multipart/form-data">
+							<input placeholder="Поиск" type="text" name="search" value="" />
+						</form>
+						<div class="main_header_line">
+							<div>
+
+							</div>
+						</div>
+						<div class="main_header_select">
+							<select name="profile">
+								<option value="quit">Выйти</option>
+								<option value="change_user">Text</option>
+								<option value="text">Text</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="main_color">
+					</div>
+
+					<div class="main_filter">
+						<ul>
+							<li>
+								<form action="#" method="post" enctype="multipart/form-data">
+									<input class="main_filter_сalendar_from " type="date" name="сalendar" value="" />
+									<div></div>
+									<input class="main_filter_сalendar_to" type="date" name="сalendar" value="" />
+
+								</form>
+							</li>
+							<li>
+								<select class="main_filter_cities" name="cities">
+									<option value="all_sities">Все города</option>
+									<option value="moscow">Москва</option>
+									<option value="st_peter">СПб</option>
+								</select>
+							</li>
+							<li>
+								<select class="main_filter_points" name="points">
+									<option value="all_points">Все точки</option>
+									<option value="leninskiy">Ленинский</option>
+									<option value="ladozhskaya">Ладожская</option>
+									<option value="patriarshie">Патриаршие</option>
+									<option value="volkova">Волкова</option>
+									<option value="mayakovskaya">Маяковская</option>
+									<option value="dumskaya">Думская</option>
+								</select>
+							</li>
+							<li>
+								<select class="main_filter_category" name="category">
+									<option value="category">Категория</option>
+									<option value="bike_case">Bike case</option>
+									<option value="swim_suit">Swim suit</option>
+								</select>
+							</li>
+							<li>
+								<select class="main_filter_payment" name="payment">
+									<option value="payment">Оплата</option>
+									<option value="paid">Оплачен</option>
+									<option value="not_paid">Не оплачен</option>
+								</select>
+							</li>
+							<li>
+								<select class="main_filter_status" name="status">
+									<option value="status">Статус</option>
+									<option value="issueв">Выдан</option>
+									<option value="available">Доступен</option>
+								</select>
+							</li>
+						</ul>
+					</div>
+
+					<div class="main_table">
+						<table>
+							<tr class="main_table_mainstring">
+								<td class="main_table_mainstring_photo"><div>Фото</div></td>
+								<td class="main_table_mainstring_category">Категория</td>
+								<td class="main_table_mainstring_product">Товар</td>
+								<td class="main_table_mainstring_city">Город</td>
+								<td class="main_table_mainstring_point">Пункт</td>
+								<td class="main_table_mainstring_issue">Дата выдачи</td>
+								<td class="main_table_mainstring_deadline">Дата окончания</td>
+								<td class="main_table_mainstring_days">Дней</td>
+								<td class="main_table_mainstring_payment">Оплата</td>
+								<td class="main_table_mainstring_status">Статус</td>
+								<td class="main_table_mainstring_client">Клиент</td>
+								<td class="main_table_mainstring_button"></td>
+							</tr>
+							<tr class="main_table_space"></tr>
+							<tr class="main_table_string">
+								<td><div class="main_table_string_photo"><img src="img/icons/camera.png" alt=""></div></td>
+								<td>Bike case</td>
+								<td class="main_table_string_product"><a href="#">BW BW II Sochi</a></td>
+								<td>Москва</td>
+								<td>Ленинский</td>
+								<td>12.05.2019</td>
+								<td>27.03.2020</td>
+								<td>40</td>
+								<td>Оплачен</td>
+								<td>Выдан</td>
+								<td class="main_table_string_client"><a href="#">Макаров Олег</a></td>
+								<td class="main_table_string_button"><a href="#">Выдать</a></td>
+							</tr>
+							<tr class="main_table_space"></tr>
+							<tr class="main_table_string">
+								<td><div class="main_table_string_photo"><img src="img/icons/camera.png" alt=""></div></td>
+								<td>Bike case</td>
+								<td class="main_table_string_product"><a href="#">BW BW II Sochi</a></td>
+								<td>Москва</td>
+								<td>Ленинский</td>
+								<td>12.05.2019</td>
+								<td>27.03.2020</td>
+								<td>40</td>
+								<td>Оплачен</td>
+								<td>Выдан</td>
+								<td class="main_table_string_client"><a href="#">Макаров Олег</a></td>
+								<td class="main_table_string_button"><a href="#">Выдать</a></td>
+							</tr>
+
+						</table>
+					</div>
+					<div class="main_nav">
+						<div>
+							<a href="#"><img src="img/icons/left_grey.png" alt=""></a>
+							<a href="#">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<span>...</span>
+							<a href="#">16</a>
+							<!-- <a href="#">
+								<svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.9667 1.35713C1.84195 1.23238 1.68601 1.17001 1.51449 1.17001C1.34296 1.17001 1.18702 1.23238 1.06227 1.35713C0.812779 1.60663 0.812779 2.01206 1.06227 2.26155L9.01495 10.2142L1.06227 18.1669C0.812779 18.4164 0.812779 18.8218 1.06227 19.0713C1.31177 19.3208 1.7172 19.3208 1.9667 19.0713L10.3716 10.6664C10.6211 10.4169 10.6211 10.0115 10.3716 9.76202L1.9667 1.35713Z" fill="#85CE36" stroke="#85CE36"/>
+								</svg>
+							</a> -->
+							<a href="#"><img src="img/icons/right_green.png" alt=""></a>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
