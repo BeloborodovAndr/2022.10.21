@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Товары</title>
+		<meta http-equiv="Content-type" content="text/html"; charset="UTF-8"/>
+		<link rel="stylesheet" href="css/products.css">
+	</head>
+	
+	<body>
+		<div class="general">
+			<div class="menu">
+				<div class="menu_adm">
+					Админка
+				</div>
+				<div class="menu_list">
+					<a href="index.html">Список заказов</a>
+					<a href="products.html">Товары</a>
+					<a href="clients.html">Клиенты</a>
+					<a href="#">Категории</a>
+					<a href="#">Пункты выдачи</a>
+					<a href="#">Новости</a>
+					<a href="#">Оферта</a>
+				</div>
+
+			</div>
+			<div class="main">
+				<div>
+					<div class="main_header">
+						<div class="main_header_image">
+							<img src="img/logo.png" alt="">
+						</div>
+						<form class="main_header_search" action="#" method="post" enctype="multipart/form-data">
+							<input placeholder="Поиск" type="text" name="search" value="" />
+						</form>
+						<div class="main_header_line">
+							<div>
+
+							</div>
+						</div>
+						<div class="main_header_select">
+							<select name="profile">
+								<option value="quit">Выйти</option>
+								<option value="change_user">Text</option>
+								<option value="text">Text</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="main_color">
+					</div>
+
+					<div class="main_filter">
+						<ul>
+							<li>
+								<form action="#" method="post" enctype="multipart/form-data">
+									<input class="main_filter_сalendar_from " type="date" name="сalendar" value="" />
+									<div></div>
+									<input class="main_filter_сalendar_to" type="date" name="сalendar" value="" />
+
+								</form>
+							</li>
+							<li>
+								<select class="main_filter_category" name="category">
+									<option value="category">Категория</option>
+									<option value="bike_case">Bike case</option>
+									<option value="swim_suit">Swim suit</option>
+								</select>
+							</li>
+							<li>
+								<select class="main_filter_status" name="status">
+									<option value="status">Статус</option>
+									<option value="issueв">Выдан</option>
+									<option value="available">Доступен</option>
+								</select>
+							</li>
+							<li>
+								<a href="add_product.html" class="main_filter_button">Добавить товар</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="main_table">
+						<table>
+							<tr class="main_table_mainstring">
+								<td class="main_table_mainstring_id">id</td>
+								<td class="main_table_mainstring_category">Категория</td>
+								<td class="main_table_mainstring_product">Товар</td>
+								<td class="main_table_mainstring_city">Город</td>
+								<td class="main_table_mainstring_point">Пункт</td>
+								<td class="main_table_mainstring_brand">Бренд</td>
+								<td class="main_table_mainstring_model">Модель</td>
+								<td class="main_table_mainstring_name-size">Название/Размер</td>
+								<td class="main_table_mainstring_condition">Состояние</td>
+								<td class="main_table_mainstring_status">Статус</td>
+								<td class="main_table_mainstring_action" colspan="2">Действие</td>
+							</tr>
+
+							<tr class="main_table_space"></tr>
+
+							<tr class="main_table_string">
+								<td>#12489</td>
+								<td>Bike case</td>
+								<td class="main_table_string_product"><a href="#">BW BW II Sochi</a></td>
+								<td>Москва</td>
+								<td>Ленинский</td>
+								<td>BW</td>
+								<td>BW II</td>
+								<td>L</td>
+								<td>Новый</td>
+								<td>В наличии</td>
+								<td class="main_table_string_eye"><a href="#"></a></td>
+								<td class="main_table_string_close"><a href="#"></a></td>
+							</tr>
+
+							<tr class="main_table_string">
+								<td>#444</td>
+								<td>Bike case</td>
+								<td class="main_table_string_product"><a href="#">BW BW II Sochi</a></td>
+								<td>СРб</td>
+								<td>Ладожская</td>
+								<td>BW</td>
+								<td>BW II</td>
+								<td>Belek</td>
+								<td>Новый</td>
+								<td>Выдан</td>
+								<td class="main_table_string_eye"><a href="#"></a></td>
+								<td class="main_table_string_close"><a href="#"></a></td>
+							</tr>
+						</table>
+					</div>
+					<div class="main_nav">
+						<div>
+							<a href="#"><img src="img/icons/left_grey.png" alt=""></a>
+							<a href="#">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<span>...</span>
+							<a href="#">16</a>
+							<a href="#"><img src="img/icons/right_green.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

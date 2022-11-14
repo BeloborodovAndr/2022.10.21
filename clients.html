@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Клиенты</title>
+		<meta http-equiv="Content-type" content="text/html"; charset="UTF-8"/>
+		<link rel="stylesheet" href="css/clients.css">
+	</head>
+	
+	<body>
+		<div class="general">
+			<div class="menu">
+				<div class="menu_adm">
+					Админка
+				</div>
+				<div class="menu_list">
+					<a href="index.html">Список заказов</a>
+					<a href="products.html">Товары</a>
+					<a href="clients.html">Клиенты</a>
+					<a href="#">Категории</a>
+					<a href="#">Пункты выдачи</a>
+					<a href="#">Новости</a>
+					<a href="#">Оферта</a>
+				</div>
+
+			</div>
+			<div class="main">
+				<div>
+					<div class="main_header">
+						<div class="main_header_image">
+							<img src="img/logo.png" alt="">
+						</div>
+						<form class="main_header_search" action="#" method="post" enctype="multipart/form-data">
+							<input placeholder="Поиск" type="text" name="search" value="" />
+						</form>
+						<div class="main_header_line">
+							<div>
+
+							</div>
+						</div>
+						<div class="main_header_select">
+							<select name="profile">
+								<option value="quit">Выйти</option>
+								<option value="change_user">Text</option>
+								<option value="text">Text</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="main_color">
+					</div>
+
+					<div class="main_filter">
+						<ul>
+							<li>
+								<select class="main_filter_payment" name="payment">
+									<option value="payment">Оплата</option>
+									<option value="paid">Оплаченные</option>
+									<option value="not-paid">Не оплаченные</option>
+									<option value="payment-all">Все</option>
+								</select>
+							</li>
+							<li>
+								<select class="main_filter_status" name="status">
+									<option value="status">Статус</option>
+									<option value="status-active">Активные</option>
+									<option value="status-closed">Закрытые</option>
+									<option value="status-all">Все</option>
+								</select>
+							</li>
+							<li>
+								<a href="#" class="main_filter_button">Добавить клиента</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="main_table">
+						<table>
+							<tr class="main_table_mainstring">
+								<td class="main_table_mainstring_client">Клиент</td>
+								<td class="main_table_mainstring_category">Категория</td>
+								<td class="main_table_mainstring_product">Товар</td>
+								<td class="main_table_mainstring_city">Город</td>
+								<td class="main_table_mainstring_point">Пункт</td>
+								<td class="main_table_mainstring_rent">Срок аренды</td>
+								<td class="main_table_mainstring_payment">Оплата</td>
+								<td class="main_table_mainstring_status">Статус</td>
+								<td class="main_table_mainstring_delete"></td>
+							</tr>
+
+							<tr class="main_table_string">
+								<td>
+									<div><a href="#">Алексеев Марк</a></div>
+									<div>8-923-458-04-18</div>
+									<div>Всего заказов: 5</div>
+									<div>Активных: 2</div>
+								</td>
+								<td colspan="7">
+									<table class="main_table_string_data">
+										<tr>
+											<td class="main_table_string_category">Bike case</td>
+											<td class="main_table_string_product"><a href="#">BW BW II Sochi</a></td>
+											<td class="main_table_string_city">Москва</td>
+											<td class="main_table_string_point">Ленинградский</td>
+											<td class="main_table_string_rent">12.08.19 - 27.02.20</td>
+											<td class="main_table_string_payment">Оплачен</td>
+											<td class="main_table_mainstring_status">Активный</td>
+										</tr>
+										<tr>
+											<td class="main_table_string_category">Bike case</td>
+											<td class="main_table_string_product"><a href="#">BW BW II Sochi</a></td>
+											<td class="main_table_string_city">СПб</td>
+											<td class="main_table_string_point">Ладожская</td>
+											<td class="main_table_string_rent">12.08.19 - 27.02.20</td>
+											<td class="main_table_string_payment">Не оплачен</td>
+											<td class="main_table_mainstring_status">Активный</td>
+										</tr>
+										<tr>
+											<td class="main_table_string_category">Bike case</td>
+											<td class="main_table_string_product"><a href="#">BW BW II Sochi</a></td>
+											<td class="main_table_string_city">СПб</td>
+											<td class="main_table_string_point">Ладожская</td>
+											<td class="main_table_string_rent">12.08.19 - 27.02.20</td>
+											<td class="main_table_string_payment">Не оплачен</td>
+											<td class="main_table_mainstring_status">Активный</td>
+										</tr>
+									</table>
+								</td>
+								<td class="main_table_string_img"><img src="img/icons/cross.png" alt="Удалить" title="Удалить клиента"></td>
+							</tr>
+
+							<tr class="main_table_string">
+								<td>
+									<div><a href="#">Лунцова Надежда</a></div>
+									<div>8-923-458-04-18</div>
+									<div>Всего заказов: 7</div>
+									<div>Активных: 1</div>
+								</td>
+								<td colspan="7">
+									<table>
+										<tr>
+											<td class="main_table_string_category">Bike case</td>
+											<td class="main_table_string_product"><a href="#">BW BW II Sochi</a></td>
+											<td class="main_table_string_city">Москва</td>
+											<td class="main_table_string_point">Ленинградский</td>
+											<td class="main_table_string_rent">12.08.19 - 27.02.20</td>
+											<td class="main_table_string_payment">Оплачен</td>
+											<td class="main_table_mainstring_status">Активный</td>
+										</tr>
+									</table>
+								</td>
+								<td class="main_table_string_img"><img src="img/icons/cross.png" alt="Удалить" title="Удалить клиента"></td>
+							</tr>
+						</table>
+					</div>
+					<div class="main_nav">
+						<a href="#"><img src="img/icons/left_grey.png" alt=""></a>
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<span>...</span>
+						<a href="#">16</a>
+						<a href="#"><img src="img/icons/right_green.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

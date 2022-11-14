@@ -1,0 +1,360 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus, :active {outline: none;}
+a:focus, a:active {outline: none;}
+nav, footer, header, aside {display: block;}
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input, button, textarea {font-family: inherit;}
+input::-ms-clear{display: none;}
+button {cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a, a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top;}
+h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
+/*========================================================*/
+
+@font-face {
+    font-family: 'Circe Regular';
+    src: url('../fonts/Circe-Regular.eot');
+    src: url('../fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Circe-Regular.woff') format('woff'),
+    url('../fonts/Circe-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Circe Bold';
+    src: url('../fonts/Circe-Bold.eot');
+    src: url('../fonts/Circe-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Circe-Bold.woff') format('woff'),
+    url('../fonts/Circe-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-color: #E5E5E5;
+}
+
+.general {
+    width: 100vw;
+}
+
+.menu {
+    overflow: auto;
+    float: left;
+    width: 332px;
+    height: 100vh; /* По верстке 993px */
+    background-color: #3A4652;
+    font-family: 'Circe Bold';
+    font-size: 26px;
+    line-height: 38px;
+}
+
+.main {
+    float: left;
+    background-color: #fff;
+    width: calc(100vw - 332px);
+    max-width: 1596px;
+    height: 100vh; /* По верстке 993px */
+    overflow: auto;
+}
+
+.menu_adm {
+    padding: 30px 0 0 40px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.menu_list a {
+    display: block;
+    padding: 12px 0 12px 40px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.menu_list a:nth-child(3) {
+    background-color: #85CE36;
+}
+
+.menu_list a:hover {
+    background-color: rgba(133, 206, 54, 0.2);
+}
+
+.main>div {
+    width: 1596px;
+}
+
+.main_header {
+    width: 100%;
+    height: 80px;
+}
+
+.main_header_image {
+    float: left;
+    width: 56%; /* 896px (56%) */
+    padding: 25px 0 0 28px;
+}
+
+.main_header_image img {
+    height: 35px;
+}
+
+.main_header_search {
+    float: left;
+    padding-top: 12px;
+    font-family: 'Circe Bold';
+    width: 29%; /* 460px (29%) */
+}
+
+.main_header_search input {
+    float: left;
+    font-size: 24px;
+    border: 1px solid #3A4652;
+    border-radius: 2px;
+    height: 55px;
+    padding: 0 15% 0 6%; /* 0 60px 0 30px; (0 13% 0 6%)*/
+    width: 100%; /* 460px (29%) */
+    background: url("../img/icons/glass.png") 95% 50% no-repeat; /* 415px (90% от 460px)*/
+}
+
+.main_header_search input:focus {
+    box-shadow: 0 0 5px rgba(58, 70, 82, 0.5);
+}
+
+.main_header_line {
+    float: left;
+    padding: 12px 20px 0 38px;
+}
+
+.main_header_line div {
+    height: 55px;
+    width: 2px;
+    background-color: #3A4652;
+}
+
+.main_header_select {
+    float: left;
+    font-family: 'Circe Regular';
+    padding-top: 11px;
+    width: 160px; /**/
+}
+
+
+.main_header_select select:hover {
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgba(58, 70, 82, 0.5);
+}
+
+/*Убрали стрелку у всех select:*/
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.main_header_select select {
+    color: #3A4652;
+    font-size: 24px;
+    line-height: 35px;
+    background: url("../img/icons/down.png") 92px 50% no-repeat;
+    width: 135px;
+    padding: 10px 0 10px 10px;
+}
+
+.main_color {
+    height: 25px; /* На странице Список заказов 28px */
+    background-color: #F6F6F6;
+}
+
+.main_filter {
+    height: 105px; /* На странице "Список заказов" 109px */
+    padding: 25px 0 0 34px;
+}
+
+.main_filter li {
+    float: left;
+}
+
+.main_filter select {
+    color: #3A4652;
+    font-family: 'Circe Bold';
+    font-size: 22px;
+    line-height: 32px;
+    border: 1px solid #3A4652;
+    border-radius: 2px;
+    height: 54px;
+    padding-left: 20px;
+    margin-right: 36px;
+}
+
+.main_filter select:hover {
+    box-shadow: 0 0 5px rgba(58, 70, 82, 0.5);
+}
+
+.main_filter_payment {
+    width: 210px;
+    background: url("../img/icons/down.png") 163px 50% no-repeat;
+}
+
+.main_filter_status {
+    width: 210px;
+    background: url("../img/icons/down.png") 163px 50% no-repeat;
+}
+
+.main_filter_button {
+    display: inline-block;
+    font-family: 'Circe Bold';
+    color: #ffffff;
+    width: 244px;
+    background-color: #85CE36;
+    border-radius: 2px;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    padding: 10px 0;
+}
+.main_filter_button:hover {
+    box-shadow: 0 0 5px rgba(133, 206, 54, 0.5);
+}
+
+.main_table {
+    border: 1px solid #3A4652;
+    border-radius: 2px;
+    margin: 0 31px 38px 34px; /*На Списке заказов 0 12px 32px 12px*/
+    font-size: 18px;
+    line-height: 27px;
+    color: #3A4652;
+    font-family: 'Circe Regular';
+}
+
+/*==========Главная срока=============*/
+.main_table>table {
+    border-collapse: collapse;
+    margin-left: 23px;
+}
+
+.main_table_mainstring {
+    font-family: 'Circe Bold';
+    text-align: left;
+    height: 63px;
+}
+
+.main_table_mainstring_client {
+    width: 234px;
+}
+.main_table_mainstring_category {
+    width: 139px;
+}
+.main_table_mainstring_product {
+    width: 263px;
+}
+.main_table_mainstring_city {
+    width: 134px;
+}
+.main_table_mainstring_point {
+    width: 156px;
+}
+.main_table_mainstring_rent {
+    width: 206px;
+}
+.main_table_mainstring_payment {
+    width: 154px;
+}
+.main_table_mainstring_status {
+    width: 132px;
+}
+.main_table_mainstring_delete {
+    width: 68px;
+}
+
+/*==========Cтроки=============*/
+.main_table_string {
+    border-top: 1px solid #3A4652;
+    vertical-align: top;
+}
+.main_table_string>td {
+    padding-top: 30px;
+}
+.main_table_string>td:first-child {
+    padding-bottom: 30px;
+}
+.main_table_string a {
+    color: #85CE36;
+}
+.main_table_string a:hover {
+    text-shadow: 0 0 5px rgba(133, 206, 54, 0.5);
+}
+.main_table_string>td div:nth-child(n+3) {
+    color: #868686;
+}
+.main_table_string_data {
+    border-collapse: collapse;*/
+}
+.main_table_string_data td {
+    height: 65px;
+    vertical-align: top;
+}
+td.main_table_string_img {
+    padding-top: 21px;
+}
+.main_table_string_img img {
+    cursor: pointer;
+}
+.main_table_string_img img:hover {
+    opacity: 0.6;
+}
+.main_table_string_category {
+    width: 139px;
+}
+.main_table_string_product {
+    width: 263px;
+}
+.main_table_string_city {
+    width: 134px;
+}
+.main_table_string_point {
+    width: 156px;
+}
+.main_table_string_rent {
+    width: 206px;
+}
+.main_table_string_payment {
+    width: 154px;
+}
+.main_table_string_status {
+    width: 132px;
+}
+/*========Перелистывание страниц=======*/
+.main_nav {
+    text-align: center;
+    font-family: 'Circe Bold';
+    font-size: 22px;
+    line-height: 22px;
+}
+.main_nav a:nth-child(2) {
+    color: #85CE36;
+}
+
+.main_nav a, .main_nav span {
+    padding: 0 14px;
+    color: #3A4652;
+}

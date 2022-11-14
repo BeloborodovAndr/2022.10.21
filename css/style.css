@@ -50,15 +50,20 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
     font-weight: normal;
     font-style: normal;
 }
+body {
+    background-color: #E5E5E5;
+}
 
 .general {
-    width: calc(100vw - 20px);
+    width: 100vw;
 }
 
 .menu {
+    overflow: auto;
     float: left;
     width: 332px;
-    height: calc(100vh - 20px); /* По верстке 993px */
+    height: 100vh; /* По верстке 993px */
+    max-height: 993px;
     background-color: #3A4652;
     font-family: 'Circe Bold';
     font-size: 26px;
@@ -67,8 +72,11 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
 
 .main {
     float: left;
-    width: calc(100vw - 352px);
-    height: calc(100vh - 20px); /* По верстке 993px */
+    background-color: #fff;
+    width: calc(100vw - 332px);
+    max-width: 1596px;
+    height: 100vh; /* По верстке 993px */
+    max-height: 993px;
     overflow: auto;
 }
 
@@ -80,7 +88,6 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
 
 .menu_list a {
     display: block;
-    padding: 12px 0;
     padding: 12px 0 12px 40px;
     margin-bottom: 10px;
     color: #fff;
@@ -173,7 +180,6 @@ select {
     background: url("../img/icons/down.png") 92px 50% no-repeat;
     width: 135px;
     padding: 10px 0 10px 10px;
-    outline-color: #85CE36;
 }
 
 .main_color {
@@ -220,6 +226,7 @@ select {
 
 .main_filter input {
     position: relative;
+    width: 140px;
     height: 100%; /*Задаем высоту плавающим input-ам*/
     border-radius: 2px;
     color: #3A4652;
@@ -243,18 +250,22 @@ select {
 }
 
 .main_filter_cities {
+    /*width: 13%;*/
     width: 210px;
     background: url("../img/icons/down.png") 162px 50% no-repeat;
 }
 .main_filter_points {
+    /*width: 12%;*/
     width: 195px;
     background: url("../img/icons/down.png") 151px 50% no-repeat;
 }
 .main_filter_category {
+    /*width: 13%; /* 12.5% */
     width: 200px;
     background: url("../img/icons/down.png") 153px 50% no-repeat;
 }
 .main_filter_payment {
+    /*width: 11%; /*10.6%*/
     width: 170px;
     background: url("../img/icons/down.png") 123px 50% no-repeat;
 }
@@ -287,11 +298,6 @@ select {
     height: 63px;
     border-bottom: 1px solid #3A4652;
 }
-
-td {
-    /*border: 1px solid #000;*/
-}
-
 
 .main_table_mainstring_photo {
     width: 103px;
@@ -383,7 +389,9 @@ td.main_table_mainstring_button {
     font-size: 22px;
     line-height: 22px;
 }
-
+.main_nav a:nth-child(2) {
+    color: #85CE36;
+}
 .main_nav a, .main_nav span {
     padding: 0 14px;
     color: #3A4652;

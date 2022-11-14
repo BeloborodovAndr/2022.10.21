@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Добавить товар</title>
+		<meta http-equiv="Content-type" content="text/html"; charset="UTF-8"/>
+		<link rel="stylesheet" href="css/add_product.css">
+	</head>
+	
+	<body>
+		<div class="general">
+			<div class="menu">
+				<div class="menu_adm">
+					Админка
+				</div>
+				<div class="menu_list">
+					<a href="index.html">Список заказов</a>
+					<a href="products.html">Товары</a>
+					<a href="clients.html">Клиенты</a>
+					<a href="#">Категории</a>
+					<a href="#">Пункты выдачи</a>
+					<a href="#">Новости</a>
+					<a href="#">Оферта</a>
+				</div>
+
+			</div>
+			<div class="main">
+				<div>
+					<div class="main_header">
+						<div class="main_header_image">
+							<img src="img/logo.png" alt="">
+						</div>
+						<form class="main_header_search" action="#" method="post" enctype="multipart/form-data">
+							<input placeholder="Поиск" type="text" name="search" value="" />
+						</form>
+						<div class="main_header_line">
+							<div>
+
+							</div>
+						</div>
+						<div class="main_header_select">
+							<select name="profile">
+								<option value="quit">Выйти</option>
+								<option value="change_user">Text</option>
+								<option value="text">Text</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="main_color">
+					</div>
+
+					<div class="main_form">
+						<form action="#" method="post" enctype="multipart/form-data">
+							<div class="main_form_category">
+								<div class="main_form_select">
+									<select class="main_form_select_product" name="category">
+										<option value="category">Категория</option>
+										<option value="bike_case">Bike case</option>
+										<option value="swim_suit">Swim suit</option>
+										<option value="swim_suit">lorem</option>
+									</select>
+								</div>
+								<div class="main_form_category_checkbox">
+									<input id="main_form_category_checkbox_input" type="checkbox" name="hide-from-site" value="yes" />
+									<label for="main_form_category_checkbox_input" class="main_form_category_checkbox_label"><span></span>Скрыть с сайта</label>
+								</div>
+							</div>
+
+							<div class="main_form_foto">
+								<div class="main_form_foto_imgarea">
+									<input id="main_form_foto_imgarea_input" type="file" name="load-foto" />
+									<label for="main_form_foto_imgarea_input" class="main_form_foto_imgarea_label">
+										<span>* Нажмите для загрузки фото или перетащите файлы мышкой</span>
+									</label>
+								</div>
+
+								<a class="main_form_foto_button" href="#"><span>Сохранить фото</span></a>
+							</div>
+
+							<!-- Блоки ввода текста -->
+							<div class="main_form_textarea">
+								<input type="text" placeholder="Название" name="name" value="">
+								<textarea placeholder="Описание" name="description"></textarea>
+								<input type="url" placeholder="Ссылка на видео" name="link-video" value="">
+								<div class="main_form_select">
+									<select class="main_form_select_product" name="condition">
+										<option value="condition">Состояние товара</option>
+										<option value="new">Новый</option>
+										<option value="used">б/у</option>
+									</select>
+								</div>
+								<div>
+								<input type="number" placeholder="Цена, руб." name="price" value="">
+								<input type="number" placeholder="Дисконт, %" name="discount" value="">
+								<input type="number" placeholder="Условия дисконта, дни" name="discount-cond" value="">
+								</div>
+								<input type="number" placeholder="Залог, руб." name="Pledge" value="">
+								<input type="number" placeholder="Мин.срок аренды, дни" name="min-rent" value="">
+								<input type="number" placeholder="Макс.срок аренды, дни" name="max-rent" value="">
+								<div class="main_form_select">
+									<select class="main_form_select_place" name="sity">
+										<option value="sity">Город</option>
+										<option value="moscow">Москва</option>
+										<option value="st_peter">СПб</option>
+									</select>
+								</div>
+								<div class="main_form_select">
+									<select class="main_form_select_place" name="address">
+										<option value="all_points">Адрес</option>
+										<option value="leninskiy">Ленинский</option>
+										<option value="ladozhskaya">Ладожская</option>
+										<option value="patriarshie">Патриаршие</option>
+										<option value="volkova">Волкова</option>
+										<option value="mayakovskaya">Маяковская</option>
+										<option value="dumskaya">Думская</option>
+									</select>
+								</div>
+							</div>
+							<div class="main_form_button">
+								<button type="submit">Сохранить товар</button>
+							</div>
+
+
+						</form>
+					</div>
+
+
+
+
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
