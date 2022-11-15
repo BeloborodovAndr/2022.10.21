@@ -313,6 +313,10 @@ select {
     /*user-select: none;*/
     text-align: center;
 }
+.main_form_foto_imgarea_label:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(58, 70, 82, 0.5);
+}
 .main_form_foto_imgarea_label span {
     font-family: 'Circe Bold';
     color: rgba(58, 70, 82, 0.5);
